@@ -509,6 +509,14 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
+
+}
+
+.footer-addres-part,
+.social-network,
+.footer-form
+{
+  flex-grow: 1;
 }
 
 .footer-link {
@@ -764,6 +772,9 @@ img {
 
   min-width: 528px;
   min-height: 581px;
+padding: 40px;
+
+
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -777,7 +788,7 @@ img {
 }
 
 .modal-btn {
-  position: inherit;
+  position: absolute;
   top: 8px;
   right: 8px;
 
@@ -801,8 +812,7 @@ img {
 
 .form-title {
   margin-bottom: 12px;
-  margin-top: 40px;
-
+ 
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -810,19 +820,14 @@ img {
   letter-spacing: 0.03em;
 }
 
-form {
-  margin: auto;
-  min-width: 528px;
-  min-height: 518px;
-  padding: 0px 40px 40px;
-}
+
 
 .form-field {
   display: flex;
   flex-direction: column;
 }
 
-.form-field:nth-child(-n + 4) {
+.form-field:nth-child(-n + 3) {
   margin-bottom: 10px;
 }
 
@@ -905,9 +910,6 @@ form {
 }
 
 .form-field-box {
-  display: flex;
-  align-items: baseline;
-
   margin-bottom: 30px;
   margin-top: 20px;
 }
@@ -957,12 +959,6 @@ form {
   background-color: var(--hero-button-hover);
 }
 
-.form-field-box {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 14px;
-}
 
 .check__input {
   position: absolute;
@@ -980,6 +976,7 @@ form {
 
 .check {
   display: flex;
+  justify-content: center;
   align-items: center;
 
   font-size: 14px;
@@ -1000,9 +997,10 @@ form {
 
 .check__input:checked + .check__box {
   background-color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-  background-image: url(../images/check.svg);
-  background-size: contain;
+  border: 1px solid var(--accent-color);
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/iconcheck.svg);
   background-origin: border-box;
 }
 
@@ -1010,7 +1008,15 @@ form {
 
 .social-network-input {
   margin-left: 93px;
+  display: flex;
+  align-items: flex-end;
 }
+
+.footer-form{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .footer-placeholder {
   padding: 0 0 0 15px;
@@ -1025,9 +1031,7 @@ form {
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
 
-.networks-item input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -1035,10 +1039,12 @@ form {
   color: rgba(255, 255, 255, 0.6);
 }
 
+
 .networks-link-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
   width: 200px;
   height: 50px;
 
@@ -1048,6 +1054,7 @@ form {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
+  border: none;
 
   font-weight: 700;
   font-size: 16px;

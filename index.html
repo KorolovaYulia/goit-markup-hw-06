@@ -395,7 +395,7 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-addres-part">
           <a href="" class="footer-link"
             >Web<span class="footer-logo">Studio</span>
           </a>
@@ -452,25 +452,20 @@
           </ul>
         </div>
 
-        <div class="social-network-input">
-          <h3 class="footer-title">Подпишитесь на рассылку</h3>
-          <ul class="networks">
-            <li class="networks-item">
-              <input
+        <form class="social-network-input">
+          <div class="footer-form">
+          <label for="text" class="footer-title">Подпишитесь на рассылку </label>
+          <input
                 type="text"
                 placeholder="E-mail"
                 class="footer-placeholder"
+                id="text"
               />
-            </li>
-            <li class="networks-item">
-              <a href="" class="networks-link-btn">
-                Подписаться<svg class="btn-svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+            </div>
+            <button class="networks-link-btn">Подписаться<svg class="btn-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg></button>
+        </form>
       </div>
     </footer>
 
@@ -481,10 +476,8 @@
             <use href="./images/modalbtn.svg#icon-modalbtn"></use>
           </svg>
         </button>
-
-        <div>
+        
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-        </div>
 
         <form>
           <div class="form-field">
