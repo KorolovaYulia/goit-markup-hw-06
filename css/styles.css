@@ -1010,11 +1010,10 @@ img {
 
 .footer-placeholder {
   padding: 0 0 0 15px;
-  margin-right: 12px;
+ 
 
   width: 358px;
   height: 50px;
-
   background-color: transparent;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1027,12 +1026,14 @@ img {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  
 }
 
 .networks-link-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin-left: 12px;
   padding: 0;
   width: 200px;
   height: 50px;
